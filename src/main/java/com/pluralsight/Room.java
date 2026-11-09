@@ -32,4 +32,14 @@ public class Room {
     public boolean isAvailable(){
         return !occupied && !dirty;
     }
+
+    public boolean checkIn(){
+        return occupied && dirty;
+    }
+    public boolean checkOut(){
+        return !occupied;
+    }
+    public boolean cleanRoom(){
+        return !dirty;
+    }
 }
