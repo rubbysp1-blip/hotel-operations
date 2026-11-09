@@ -8,5 +8,9 @@ public class App {
         System.out.println(room.isAvailable());
         System.out.println(room.isDirty());
         System.out.println(room.isOccupied());
+
+        Reservation reservation = new Reservation("king", 3, true);
+
+        System.out.println("Reservation Total: " + reservation.getReservationTotal());
     }
 }
