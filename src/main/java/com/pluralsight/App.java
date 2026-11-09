@@ -13,7 +13,7 @@ public class App {
 
         System.out.println("Reservation Total: " + reservation.getReservationTotal());
 
-        Employee employee = new Employee(1234, "Ruby", "IT", 20.00, 20);
+        Employee employee = new Employee(1234, "Ruby", "IT", 20.00, 45);
         System.out.println(employee.getTotalPay());
     }
 }
