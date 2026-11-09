@@ -12,5 +12,8 @@ public class App {
         Reservation reservation = new Reservation("king", 3, true);
 
         System.out.println("Reservation Total: " + reservation.getReservationTotal());
+
+        Employee employee = new Employee(1234, "Ruby", "IT", 20.00, 20);
+        System.out.println(employee.getTotalPay());
     }
 }
