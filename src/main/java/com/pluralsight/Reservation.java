@@ -21,15 +21,18 @@ public class Reservation {
     }
 
     public double getPrice(){
-        if(roomType.equalsIgnoreCase("king") && weekend) {
-            return 139.00 * (1 + .10);
-        } else if(roomType.equalsIgnoreCase("double") && weekend) {
-            return 124.00 * (1 + .10);
-        }else if(roomType.equalsIgnoreCase("king")){
-            return numberOfNights * 139.00;
-        } else{
-            return numberOfNights * 124.00;
+        double price = 0;
+        if(roomType.equalsIgnoreCase("king")){
+            price = 139.00;
+        }else{
+            price = 124.00;
         }
+
+        if(weekend){
+            price *= (1.10);
+        }
+
+        return price;
     }
 
     public int getNumberOfNights() {

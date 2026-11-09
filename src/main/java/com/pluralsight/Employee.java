@@ -2,13 +2,13 @@ package com.pluralsight;
 
 public class Employee {
 
-    private double employeeId;
+    private int employeeId;
     private String name;
     private String department;
     private double payRate;
     private double hoursWorked;
 
-    public Employee(double employeeId, String name, String department, double payRate, double hoursWorked) {
+    public Employee(int employeeId, String name, String department, double payRate, double hoursWorked) {
         this.employeeId = employeeId;
         this.name = name;
         this.department = department;
@@ -16,7 +16,7 @@ public class Employee {
         this.hoursWorked = hoursWorked;
     }
 
-    public double getEmployeeId() {
+    public int getEmployeeId() {
         return employeeId;
     }
 

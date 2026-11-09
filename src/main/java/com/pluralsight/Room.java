@@ -22,11 +22,11 @@ public class Room {
     }
 
     public boolean isOccupied(){
-        return true;
+        return occupied;
     }
 
     public boolean isDirty(){
-        return true;
+        return dirty;
     }
 
     public boolean isAvailable(){
