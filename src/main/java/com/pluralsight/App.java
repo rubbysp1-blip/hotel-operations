@@ -20,6 +20,13 @@ public class App {
         room4.cleanRoom();
         System.out.println("Room 4 Clean and Available: " + room4.isAvailable());
 
+        //Hotel Class
+        Hotel hotel = new Hotel("Lakeside Inn", 2, 10);
+        hotel.bookRoom(2, true);
+        System.out.println(hotel.getAvailableSuites());
+        hotel.bookRoom(1, true);
+        System.out.println(hotel.getAvailableSuites());
+
         //Reservation Class
         Reservation reservation = new Reservation("king", 3, true);
         Reservation reservation2 = new Reservation("double", 3, false);
