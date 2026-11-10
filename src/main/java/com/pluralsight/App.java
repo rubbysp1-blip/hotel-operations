@@ -29,6 +29,9 @@ public class App {
         //Employee Class
         Employee employee = new Employee(1234, "Ruby", "IT", 20.00, 45);
         System.out.printf("Employee Total Pay (45 hrs): $%.2f%n", employee.getTotalPay());
+        employee.punchIn();
+        employee.punchOut();
+        System.out.println(employee.getHoursWorked());
 
         Employee employee2 = new Employee(1234, "Ruby", "IT", 20.00, 20);
         System.out.printf("Employee Total Pay (40 hrs): $%.2f%n", employee2.getTotalPay());
