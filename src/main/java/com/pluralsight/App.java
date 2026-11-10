@@ -41,7 +41,7 @@ public class App {
         System.out.println(employee.getHoursWorked());
 
         Employee employee2 = new Employee(1234, "Ruby", "IT", 20.00, 20);
-        System.out.printf("Employee Total pay (40 hrs): $%.2f%n", employee2.getTotalPay());
+        System.out.printf("Employee Total pay (20 hrs): $%.2f%n", employee2.getTotalPay());
         employee2.punchIn(10);
         employee2.punchOut(14);
         System.out.println("Hours Worked: " + employee2.getHoursWorked());
