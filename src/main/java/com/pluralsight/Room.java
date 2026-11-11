@@ -43,9 +43,7 @@ public class Room {
         occupied = false;
     }
     public void cleanRoom(){
-        if(occupied){
-            dirty = true;
-        }else{
+        if(!occupied){
             dirty = false;
         }
 
