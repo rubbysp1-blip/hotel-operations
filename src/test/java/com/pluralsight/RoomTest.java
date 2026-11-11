@@ -42,4 +42,42 @@ class RoomTest {
         assertFalse(room.isDirty());
         assertTrue(room.isAvailable());
     }
+
+    @Test
+    public void checkIn_should_NotMarkOccupied_WhenStillDirty(){
+        //arrange
+        Room room = new Room(2, 150.00, false, true);
+
+        //act
+        room.checkIn();
+
+        //assert
+        assertFalse(room.isOccupied());
+    }
+
+    @Test
+    public void checkIn_should_doNothing_WhenRoomOccupied(){
+        //arrange
+        Room room = new Room(2, 150.00, true, false);
+
+        //act
+        room.checkIn();
+
+        //assert
+        assertTrue(room.isOccupied());
+        assertFalse(room.isDirty());
+    }
+
+    @Test
+    public void cleanRoom_should_doNothing_WhenOccupiedAndDirty(){
+        //arrange
+        Room room = new Room(2, 150.00, true, true);
+
+        //act
+        room.cleanRoom();
+
+        //assert
+        assertTrue(room.isOccupied());
+        assertTrue(room.isDirty());
+    }
 }
