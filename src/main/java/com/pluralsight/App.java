@@ -23,9 +23,9 @@ public class App {
         //Hotel Class
         Hotel hotel = new Hotel("Lakeside Inn", 2, 10);
         hotel.bookRoom(2, true);
-        System.out.println(hotel.getAvailableSuites());
+        System.out.println("Available Suites: " + hotel.getAvailableSuites());
         hotel.bookRoom(1, true);
-        System.out.println(hotel.getAvailableSuites());
+        System.out.println("Available Suites: " + hotel.getAvailableSuites());
 
         //Reservation Class
         Reservation reservation = new Reservation("king", 3, true);
@@ -38,7 +38,7 @@ public class App {
         System.out.printf("Employee Total Pay (45 hrs): $%.2f%n", employee.getTotalPay());
         employee.punchIn();
         employee.punchOut();
-        System.out.println(employee.getHoursWorked());
+        System.out.println("Hours Worked: " + employee.getHoursWorked());
 
         Employee employee2 = new Employee(1234, "Ruby", "IT", 20.00, 20);
         System.out.printf("Employee Total pay (20 hrs): $%.2f%n", employee2.getTotalPay());
